@@ -29,13 +29,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View view) {
-        switch (view.getId()){
-            case R.id.button:
-                Intent intent = new Intent(android.content.Intent.ACTION_VIEW,
-                        Uri.parse("geo:0,0?q=replace+this+with+an+address"));
-                startActivity(intent);
-
-        }
+        
     }
 }
 
