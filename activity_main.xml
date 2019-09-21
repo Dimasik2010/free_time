@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:text="Enter your free time:"
+        android:textSize="35dp" />
+
+
+    <Button
+        android:id="@+id/cooking"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_below="@id/hobby"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/circle"
+        android:text="Button"
+
+
+        />
+
+    <Button
+        android:id="@+id/sport"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_below="@id/hobby"
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="40dp"
+        android:layout_toRightOf="@id/cooking"
+        android:background="@drawable/circle"
+        android:text="Button"
+
+
+
+        />
+
+    <TextView
+        android:id="@+id/hobby"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/time"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:text="Choose your hobby:"
+        android:textSize="35dp" />
+
+    <Button
+        android:id="@+id/drawing"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:text="Button"
+        android:layout_below="@id/cooking"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/circle"
+        />
+
+    <Button
+        android:id="@+id/reading"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:text="Button"
+        android:background="@drawable/circle"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/sport"
+        android:layout_marginLeft="65dp"
+        android:layout_toRightOf="@id/drawing"
+        android:onClick="onClick"
+        />
+
+
+</RelativeLayout>
